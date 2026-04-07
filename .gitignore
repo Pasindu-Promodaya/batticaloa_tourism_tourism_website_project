@@ -1,0 +1,28 @@
+# IDE and Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local development
+.env
+.env.local
+node_modules/
+
+# PHP errors
+*.log
+
+# Composer
+vendor/
+composer.lock
+
+# Build artifacts
+dist/
+build/
