@@ -8,17 +8,17 @@
 
 ## 📋 Table of Contents
 
-- [About The Project](#https://github.com/Pasindu-Promodaya/batticaloa_tourism_tourism_website_project?tab=readme-ov-file#-about-the-project)
+- [About The Project](#-about-the-project)
 - [The Problem We Solve](#the-problem-we-solve)
-- [Features](#https://github.com/Pasindu-Promodaya/batticaloa_tourism_tourism_website_project?tab=readme-ov-file#features)
-- [Tech Stack](#tech-stack)
-- [Installation Guide](#installation-guide)
-- [Project Structure](#project-structure)
-- [Pages Overview](#pages-overview)
-- [Screenshots](#screenshots)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Installation Guide](#-installation-guide)
+- [Project Structure](#-project-structure)
+- [Pages Overview](#-pages-overview)
+- [Screenshots](#-screenshots)
+- [Usage](#-usage)
+- [Contributing](#-contributing)
+- [License](#-license)
 
 ---
 
