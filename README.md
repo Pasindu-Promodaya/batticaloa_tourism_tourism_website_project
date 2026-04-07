@@ -8,7 +8,7 @@
 
 ## 📋 Table of Contents
 
-- [About The Project](#about-the-project)
+- [About The Project](#https://github.com/Pasindu-Promodaya/batticaloa_tourism_tourism_website_project?tab=readme-ov-file#-about-the-project)
 - [The Problem We Solve](#the-problem-we-solve)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
