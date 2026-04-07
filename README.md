@@ -258,23 +258,23 @@ batticaloa_tourism_tourism_website_project/
 
 ### Homepage - Welcome Section
 
-![Homepage Hero](https://via.placeholder.com/800x400?text=Batticaloa+Welcome)
-_Engaging hero section showcasing Batticaloa's natural beauty_
+![Homepage Hero](https://raw.githubusercontent.com/Pasindu-Promodaya/batticaloa_tourism_tourism_website_project/main/screenshots/01-homepage.png)
+_Engaging hero section showcasing Batticaloa's natural beauty with welcome message and overview_
 
 ### About Page - Location & Overview
 
-![About Batticaloa](https://via.placeholder.com/800x400?text=About+Batticaloa+Page)
-_Map location and comprehensive city information with cultural gallery_
+![About Batticaloa](https://raw.githubusercontent.com/Pasindu-Promodaya/batticaloa_tourism_tourism_website_project/main/screenshots/02-about.png)
+_Map location and comprehensive city information with cultural gallery and heritage details_
 
 ### Tourist Attractions - Interactive Modals
 
-![Tourist Attractions](https://via.placeholder.com/800x400?text=Tourist+Attractions)
-_Detailed attraction cards with modal popups and location maps_
+![Tourist Attractions](https://raw.githubusercontent.com/Pasindu-Promodaya/batticaloa_tourism_tourism_website_project/main/screenshots/03-attractions.png)
+_Detailed attraction cards with modal popups, maps, and comprehensive location information_
 
 ### Activities - Adventure Experiences
 
-![Activities](https://via.placeholder.com/800x400?text=Activities+Page)
-_Visual showcase of lagoon rides, beach activities, cycling, and fishing_
+![Activities](https://raw.githubusercontent.com/Pasindu-Promodaya/batticaloa_tourism_tourism_website_project/main/screenshots/04-activities.png)
+_Visual showcase of lagoon rides, beach activities, cycling tours, and fishing experiences_
 
 ---
 
