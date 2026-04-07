@@ -120,7 +120,7 @@ cd batticaloa_tourism_tourism_website_project
 
 ```bash
 # Start XAMPP Control Panel
-# Ensure Apache and MySQL are running
+# Ensure Apache is running
 
 # Alternatively, start via command line
 cd C:\xampp
@@ -415,11 +415,11 @@ copies or substantial portions of the Software.
 ## 📊 Project Statistics
 
 - **Pages:** 5 main pages + reusable components
-- **Images:** 10+ quality photographs
-- **File Size:** ~3.5 MB (optimized)
-- **Load Time:** < 2 seconds (average)
+- **Images:** 22+ high-quality photographs
+- **File Size:** ~3.4 MB (optimized)
+- **Load Time:** < 2 seconds (average desktop)
 - **Browser Support:** 95%+ coverage
-- **Mobile Responsive:** Yes (tested on all major devices)
+- **Mobile Responsive:** Yes (tested on common devices)
 
 ---
 
