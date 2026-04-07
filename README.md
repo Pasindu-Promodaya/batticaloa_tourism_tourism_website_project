@@ -407,7 +407,7 @@ copies or substantial portions of the Software.
 ## 📊 Project Statistics
 
 - **Pages:** 5 main pages + reusable components
-- **Images:** 24+ high-quality photographs
+- **Images:** 10+ quality photographs
 - **File Size:** ~3.5 MB (optimized)
 - **Load Time:** < 2 seconds (average)
 - **Browser Support:** 95%+ coverage
