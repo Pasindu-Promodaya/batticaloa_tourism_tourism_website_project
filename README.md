@@ -216,14 +216,12 @@ batticaloa_tourism_tourism_website_project/
 - Hero section with welcome message
 - Overview of Batticaloa highlights
 - Call-to-action for exploration
-- **Screenshot:** Welcome banner with lagoons and beaches
 
 ### ℹ️ About (about.php)
 
 - Detailed city information and location map
 - Historical background and cultural context
 - Gallery of key attractions
-- **Screenshot:** About section with map showing Batticaloa location
 
 ### 🏛️ Attractions (attractions.php)
 
@@ -233,7 +231,6 @@ batticaloa_tourism_tourism_website_project/
   - **Kallady Beach** - Famous for "singing fish" phenomenon
   - **Kallady Temple** - Hindu cultural landmark
 - Interactive modals with maps and descriptions
-- **Screenshot:** Attraction cards with modal popups
 
 ### 🎯 Activities (activities.php)
 
@@ -243,7 +240,6 @@ batticaloa_tourism_tourism_website_project/
   - Guided cycling tours
   - Traditional fishing experiences
 - High-quality activity photography
-- **Screenshot:** Activity grid showcasing different adventures
 
 ### 🍜 Food & Culture (food-culture.php)
 
@@ -275,6 +271,11 @@ _Detailed attraction cards with modal popups, maps, and comprehensive location i
 
 ![Activities](https://cdn.jsdelivr.net/gh/Pasindu-Promodaya/batticaloa_tourism_tourism_website_project@main/screenshots/04-activities.png)
 _Visual showcase of lagoon rides, beach activities, cycling tours, and fishing experiences_
+
+### Food & Culture - Local Heritage
+
+![Food & Culture](https://cdn.jsdelivr.net/gh/Pasindu-Promodaya/batticaloa_tourism_tourism_website_project@main/screenshots/05-food_culture.png)
+_Exploration of local cuisine, festival celebrations, cultural traditions, and traditional crafts of Batticaloa_
 
 ---
 
