@@ -182,6 +182,14 @@ batticaloa_tourism_tourism_website_project/
 │   ├── temple.jpeg
 │   └── [location maps]
 │
+├── screenshots/              # README documentation screenshots
+│   ├── 01-homepage.png
+│   ├── 02-about.png
+│   ├── 03-attractions.png
+│   ├── 04-activities.png
+│   ├── 05-food_culture.png
+│   └── README.md
+│
 ├── .gitignore                # Git ignore rules
 └── README.md                 # This file
 ```
