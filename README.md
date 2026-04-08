@@ -427,7 +427,6 @@ copies or substantial portions of the Software.
 
 ### 🌏 Explore Batticaloa. Experience Culture. Create Memories.
 
-[Visit the Website](http://localhost/batticaloa_tourism_tourism_website_project/) |
 [Star on GitHub](https://github.com/Pasindu-Promodaya/batticaloa_tourism_tourism_website_project) |
 [Report Issues](https://github.com/Pasindu-Promodaya/batticaloa_tourism_tourism_website_project/issues)
 
