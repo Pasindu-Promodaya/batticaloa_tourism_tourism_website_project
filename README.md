@@ -409,7 +409,7 @@ _Exploration of local cuisine, festival celebrations, cultural traditions, and t
 
 ```bash
 cd C:\xampp\htdocs\batticaloa_tourism_tourism_website_project
-# Open http://localhost/batticaloa_tourism_tourism_website_project/
+# Open http://localhost/batticaloa_tourism_tourism_website_project/src/index.php in your browser
 ```
 
 #### Adding New Attractions
@@ -541,6 +541,6 @@ copies or substantial portions of the Software.
 
 ---
 
-**Last Updated:** April 7, 2026  
+**Last Updated:** April 8, 2026  
 **Version:** 1.0.0  
 **Maintained By:** Development Team
