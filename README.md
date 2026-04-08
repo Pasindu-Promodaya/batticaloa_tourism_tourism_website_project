@@ -96,10 +96,14 @@ This platform helps tourism boards, local businesses, and individual travelers d
 
 ### Prerequisites
 
-- **XAMPP** (Apache + PHP) installed on your system
-- **Git** for version control
-- Basic knowledge of PHP and web development
-- Text editor or IDE (VS Code recommended)
+- **XAMPP 8.1+** (Apache + PHP 8.0+) installed on your system
+  - [Download XAMPP](https://www.apachefriends.org/)
+  - Includes Apache, PHP, and MySQL (MySQL NOT required for this project)
+- **Git** for version control ([Download Git](https://git-scm.com/))
+- **Operating System**: Windows, macOS, or Linux
+- **Browser**: Chrome 90+, Firefox 88+, Safari 14+, Edge 90+, or similar
+- **Basic knowledge**: HTML, CSS, PHP, and web development concepts
+- **Text Editor/IDE**: VS Code (recommended) or any PHP-capable editor
 
 ### Step-by-Step Setup
 
@@ -114,47 +118,127 @@ git clone https://github.com/Pasindu-Promodaya/batticaloa_tourism_tourism_websit
 
 # Navigate into the project
 cd batticaloa_tourism_tourism_website_project
+
+# Verify the structure - you should see these folders:
+dir
+# Output should show:
+#   src/              (PHP source code)
+#   css/              (stylesheets)
+#   js/               (javascript)
+#   images/           (image assets - 22+ photos)
+#   screenshots/      (documentation images)
 ```
 
-#### 2. **Configure XAMPP**
+#### 2. **Start Apache Server**
+
+**Option A: Using XAMPP GUI (Recommended for beginners)**
+
+1. Open XAMPP Control Panel: `C:\xampp\xampp-control.exe`
+2. Click **Start** button next to Apache module
+3. Wait for status to show "Running" (green highlight)
+4. **Note**: MySQL is NOT required - you can leave it stopped
+
+**Option B: Command Line (Windows)**
 
 ```bash
-# Start XAMPP Control Panel
-# Ensure Apache is running
-
-# Alternatively, start via command line
 cd C:\xampp
 apache_start.bat
 ```
 
+**Option C: Command Line (macOS/Linux)**
+
+```bash
+sudo /Applications/XAMPP/xamppfiles/bin/apachectl start
+```
+
+**Verify Apache is Running**
+
+- Open browser and go to: `http://localhost`
+- You should see XAMPP dashboard
+- If Apache is not running, you'll see "Connection refused" error
+
 #### 3. **Access the Website**
 
+⚠️ **IMPORTANT**: All PHP files are in the `src/` folder. You MUST include `/src/` in the URL.
+
+**Home Page** (Start here):
+
 ```
-Open your browser and navigate to:
 http://localhost/batticaloa_tourism_tourism_website_project/src/index.php
 ```
 
-Alternatively, you can access individual pages directly:
+**Other Pages** (via navigation menu or direct URL):
 
-- `http://localhost/batticaloa_tourism_tourism_website_project/src/about.php`
-- `http://localhost/batticaloa_tourism_tourism_website_project/src/attractions.php`
-- `http://localhost/batticaloa_tourism_tourism_website_project/src/activities.php`
-- `http://localhost/batticaloa_tourism_tourism_website_project/src/food-culture.php`
+- About Batticaloa: `http://localhost/batticaloa_tourism_tourism_website_project/src/about.php`
+- Tourist Attractions: `http://localhost/batticaloa_tourism_tourism_website_project/src/attractions.php`
+- Activities: `http://localhost/batticaloa_tourism_tourism_website_project/src/activities.php`
+- Food & Culture: `http://localhost/batticaloa_tourism_tourism_website_project/src/food-culture.php`
 
-#### 4. **Verify Installation**
+❌ **These URLs will NOT work** (missing /src/):
 
-- Homepage should load without errors
-- Navigation links should work
-- Modal popups should appear when clicking "View" buttons
+- ~~`http://localhost/batticaloa_tourism_tourism_website_project/`~~
+- ~~`http://localhost/batticaloa_tourism_tourism_website_project/index.php`~~
+
+#### 4. **Verify Installation Success**
+
+**Check Homepage (index.php)**
+
+- ✅ Page loads without blank white screen
+- ✅ "Batticaloa Tourism" title and header visible
+- ✅ Hero image displays
+- ✅ Navigation menu shows 5 links: Home, About Batticaloa, Tourist Attractions, Activities, Food & Culture
+- ✅ Page has professional styling (blue header, formatted text)
+
+**Check Navigation**
+
+- ✅ Click each navigation link - page changes without errors
+- ✅ Page title updates in browser tab
+- ✅ Images load on each page
+- ✅ No 404 errors in console
+
+**Check Attractions Page Interactivity**
+
+1. Navigate to "Tourist Attractions"
+2. Verify 4 attraction cards display:
+   - Batticaloa Dutch Fort
+   - Batticaloa Lagoon Park
+   - Kallady Beach
+   - Kallady Temple
+3. Click "View" button on any attraction:
+   - ✅ Modal popup appears with attraction details
+   - ✅ Map image displays inside modal
+   - ✅ Can close modal by clicking X or outside popup
+
+**Check Browser Console for Errors**
+
+1. Open Developer Tools: Press `F12`
+2. Go to **Console** tab
+3. ✅ No red error messages
+4. ✅ No broken image icons (red X)
 
 ### Troubleshooting
 
-| Issue                  | Solution                                            |
-| ---------------------- | --------------------------------------------------- |
-| Port 80 already in use | Change Apache port in `httpd.conf`                  |
-| PHP not recognized     | Verify PHP is installed and PATH configured         |
-| Images not loading     | Check file paths and ensure `images/` folder exists |
-| 404 errors             | Verify URL matches project folder name              |
+| Issue                       | Solution                                                                                                                                                 |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **White/blank page loads**  | (1) Check XAMPP error log: `C:\xampp\apache\logs\error.log` (2) Open DevTools (F12) → Console for errors (3) Verify Apache is running                    |
+| **404 Not Found error**     | **Most common!** Make sure URL includes `/src/` - e.g., `/batticaloa.../src/index.php` NOT `/batticaloa.../index.php`                                    |
+| **Images don't display**    | (1) Verify `images/` folder exists in project root (2) Check Network tab (F12) for 404 errors on images (3) Verify 22+ JPEG files exist in images folder |
+| **Styling looks broken**    | (1) Check if `css/style.css` exists (2) Open DevTools → Network tab, look for 404 on CSS file (3) Verify CSS path: `../css/style.css` in PHP files       |
+| **Modal popups don't work** | (1) Check Console (F12) for JavaScript errors (2) Verify `js/popup.js` loads successfully (Network tab) (3) Try clicking View button again               |
+| **Apache won't start**      | (1) Check error log: `C:\xampp\apache\logs\error.log` (2) Verify port 80 is available: `netstat -ano` (3) Try different port in `httpd.conf`             |
+| **Port 80 already in use**  | (1) Find process using port 80: `netstat -ano \| findstr :80` (2) Stop that process or (3) Change Apache port in `C:\xampp\apache\conf\httpd.conf`       |
+| **PHP not recognized**      | (1) Reinstall XAMPP (2) Test PHP: `C:\xampp\php\php.exe -v` in command line (3) Verify PHP is in PATH variable                                           |
+| **Navigation links broken** | (1) Verify all 6 PHP files exist in `src/` folder (2) Check for typos in links in `src/nav.php` (3) Ensure each .php file exists                         |
+
+**Debug Checklist**
+
+- [ ] Apache is running (check XAMPP Control Panel or `http://localhost`)
+- [ ] Project folder is at: `C:\xampp\htdocs\batticaloa_tourism_tourism_website_project\`
+- [ ] URL includes `/src/` - not root folder
+- [ ] DevTools Console (F12) shows no red errors
+- [ ] All folders exist: `src/`, `css/`, `js/`, `images/`, `screenshots/`
+- [ ] 6 PHP files exist: `src/index.php`, `about.php`, `attractions.php`, `activities.php`, `food-culture.php`, `nav.php`
+- [ ] Browser is Chrome 90+, Firefox 88+, Safari 14+, or similar
 
 ---
 
