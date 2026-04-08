@@ -1,0 +1,72 @@
+# Batticaloa Tourism Website - Apache Configuration
+
+# Enable mod_rewrite
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /batticaloa_tourism_tourism_website_project/
+</IfModule>
+
+# Disable directory listing
+Options -Indexes
+
+# Enable GZIP compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Set proper expiration headers for caching
+<IfModule mod_expires.c>
+  ExpiresActive On
+  
+  # Images
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  
+  # CSS
+  ExpiresByType text/css "access plus 1 month"
+  
+  # JavaScript
+  ExpiresByType application/javascript "access plus 1 month"
+  
+  # Default
+  ExpiresDefault "access plus 2 days"
+</IfModule>
+
+# Set MIME types
+<IfModule mod_mime.c>
+  AddType application/json json
+  AddType text/javascript js
+  AddType text/html php
+</IfModule>
+
+# Security headers
+<IfModule mod_headers.c>
+  # Prevent MIME type sniffing
+  Header always set X-Content-Type-Options "nosniff"
+  
+  # Enable XSS protection
+  Header always set X-XSS-Protection "1; mode=block"
+  
+  # Prevent clickjacking
+  Header always set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+# PHP error suppression (customize as needed)
+php_flag display_errors Off
+php_flag log_errors On
+php_value error_log /var/log/php-errors.log
+
+# Allow access to favicon and robots.txt
+<FilesMatch "^(favicon\.ico|robots\.txt)$">
+  <IfModule mod_headers.c>
+    Header set Cache-Control "max-age=3600"
+  </IfModule>
+</FilesMatch>
+
+# Deny access to sensitive files
+<FilesMatch "^(\.env|\.git|composer\.|README|LICENSE|CHANGELOG|CONTRIBUTING|CODE_OF_CONDUCT)">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
