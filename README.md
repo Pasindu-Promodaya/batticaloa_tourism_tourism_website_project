@@ -156,12 +156,20 @@ http://localhost/batticaloa_tourism_tourism_website_project/
 ```
 batticaloa_tourism_tourism_website_project/
 │
-├── index.php                 # Home page (landing page)
-├── about.php                 # About Batticaloa page
-├── attractions.php           # Tourist attractions listing
-├── activities.php            # Activities & adventures page
-├── food-culture.php          # Food & cultural heritage page
-├── nav.php                   # Reusable navigation component
+├── index.php                 # Entry point - routes to src/index.php
+├── about.php                 # Entry point - routes to src/about.php
+├── attractions.php           # Entry point - routes to src/attractions.php
+├── activities.php            # Entry point - routes to src/activities.php
+├── food-culture.php          # Entry point - routes to src/food-culture.php
+├── nav.php                   # [DEPRECATED - moved to src/]
+│
+├── src/                      # Application source code
+│   ├── index.php             # Home page (landing page)
+│   ├── about.php             # About Batticaloa page
+│   ├── attractions.php       # Tourist attractions listing
+│   ├── activities.php        # Activities & adventures page
+│   ├── food-culture.php      # Food & cultural heritage page
+│   └── nav.php               # Reusable navigation component
 │
 ├── css/
 │   └── style.css             # Main stylesheet (responsive design)
@@ -169,7 +177,7 @@ batticaloa_tourism_tourism_website_project/
 ├── js/
 │   └── popup.js              # Modal interaction handler
 │
-├── images/                   # Image assets
+├── images/                   # Image assets (22+ high-quality photos)
 │   ├── home-image.jpeg
 │   ├── about-image-*.jpeg
 │   ├── attractions-image-*.jpeg
@@ -190,19 +198,33 @@ batticaloa_tourism_tourism_website_project/
 │   ├── 05-food_culture.png
 │   └── README.md
 │
+├── .github/                  # GitHub templates & workflows
+├── .editorconfig             # Code style consistency rules
 ├── .gitignore                # Git ignore rules
-└── README.md                 # This file
+├── .htaccess                 # Apache configuration
+├── LICENSE                   # MIT License
+├── README.md                 # Project documentation
+├── CONTRIBUTING.md           # Contribution guidelines
+├── CODE_OF_CONDUCT.md        # Community standards
+├── CHANGELOG.md              # Version history
+└── [other config files]
 ```
 
 ### Key Components
 
-**nav.php** - Shared navigation component
+**src/nav.php** - Shared navigation component included in all pages
 
 ```php
-<?php include 'nav.php'; ?>  // Include in all pages
+<?php include 'nav.php'; ?>  // Include within src/ pages
 ```
 
-**popup.js** - Modal system for attraction details
+**src/** - All application PHP files:
+
+- Routes from root entry points (index.php, about.php, etc.) to src/ files
+- Cleaner code organization with source files in dedicated directory
+- Asset paths updated to reference parent directory (../css, ../js, ../images)
+
+**js/popup.js** - Modal system for attraction details
 
 - Handles opening/closing modals
 - Displays maps and detailed information
