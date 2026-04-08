@@ -131,8 +131,15 @@ apache_start.bat
 
 ```
 Open your browser and navigate to:
-http://localhost/batticaloa_tourism_tourism_website_project/
+http://localhost/batticaloa_tourism_tourism_website_project/src/index.php
 ```
+
+Alternatively, you can access individual pages directly:
+
+- `http://localhost/batticaloa_tourism_tourism_website_project/src/about.php`
+- `http://localhost/batticaloa_tourism_tourism_website_project/src/attractions.php`
+- `http://localhost/batticaloa_tourism_tourism_website_project/src/activities.php`
+- `http://localhost/batticaloa_tourism_tourism_website_project/src/food-culture.php`
 
 #### 4. **Verify Installation**
 
@@ -155,13 +162,6 @@ http://localhost/batticaloa_tourism_tourism_website_project/
 
 ```
 batticaloa_tourism_tourism_website_project/
-│
-├── index.php                 # Entry point - routes to src/index.php
-├── about.php                 # Entry point - routes to src/about.php
-├── attractions.php           # Entry point - routes to src/attractions.php
-├── activities.php            # Entry point - routes to src/activities.php
-├── food-culture.php          # Entry point - routes to src/food-culture.php
-├── nav.php                   # [DEPRECATED - moved to src/]
 │
 ├── src/                      # Application source code
 │   ├── index.php             # Home page (landing page)
@@ -313,10 +313,11 @@ _Exploration of local cuisine, festival celebrations, cultural traditions, and t
 
 ### For End Users
 
-1. Navigate to `http://localhost/batticaloa_tourism_tourism_website_project/`
+1. Navigate to `http://localhost/batticaloa_tourism_tourism_website_project/src/index.php`
 2. Explore different sections using the navigation menu
-3. Click "View" buttons on attractions to see detailed information and maps
-4. Browse activities and cultural information for travel planning
+3. Click navigation links to visit other pages (About, Attractions, Activities, Food & Culture)
+4. Click "View" buttons on attractions to see detailed information and maps
+5. Browse activities and cultural information for travel planning
 
 ### For Developers
 
