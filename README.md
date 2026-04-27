@@ -12,6 +12,7 @@
 - [The Problem We Solve](#the-problem-we-solve)
 - [Features](#-features)
 - [Tech Stack](#-tech-stack)
+- [Responsive Design](#-responsive-design)
 - [Installation Guide](#-installation-guide)
 - [Apache Configuration](#-apache-configuration)
 - [Project Structure](#-project-structure)
@@ -90,6 +91,57 @@ This platform helps tourism boards, local businesses, and individual travelers d
 - Safari 14+
 - Edge 90+
 - Mobile browsers (iOS Safari, Chrome Mobile)
+
+---
+
+## 📱 Responsive Design
+
+The website is optimized for small phones, phones in landscape mode, tablets, and desktops using layered CSS breakpoints.
+
+### Active breakpoints
+
+- `max-width: 360px`: ultra-small devices (compact phones)
+- `min-width: 361px and max-width: 390px`: compact modern phones (readability-tuned)
+- `min-width: 391px and max-width: 480px`: standard phones (inherits default phone rules)
+- `max-width: 700px`: default phone layout baseline
+- `min-width: 481px and max-width: 700px`: landscape phones and small phablets
+- `min-width: 701px and max-width: 1024px`: tablets
+- `min-width: 1025px`: desktop/laptop experience
+
+### What is adapted by breakpoint
+
+- Navigation spacing and wrapping behavior
+- Hero section height and text size
+- Card/grid density for highlight and attraction sections
+- Modal width, padding, and close-button size
+- Page padding and content breathing space
+
+### How to test responsiveness
+
+1. Open the site in Chrome or Edge and press `F12`.
+2. Toggle device toolbar using `Ctrl+Shift+M`.
+3. Test these viewport widths:
+
+- `360 x 800` (ultra-small phones)
+- `375 x 812` (compact modern phones)
+- `390 x 844` (modern phones)
+- `412 x 915` (larger modern phones)
+- `700 x 390` (phone landscape)
+- `768 x 1024` (tablet portrait)
+- `1024 x 768` (tablet landscape)
+- `1366 x 768` (desktop baseline)
+
+4. On each width, verify:
+
+- Navigation wraps cleanly and remains clickable
+- Hero text stays readable without clipping
+- Cards align without horizontal scrolling
+- Modal opens fully, fits viewport, and closes correctly
+- No broken layout or overlapping content
+
+5. Rotate phone/tablet presets and re-check sections with images and cards.
+6. Open DevTools Console and confirm there are no runtime errors.
+7. Hard refresh (`Ctrl+F5`) after CSS changes to avoid cached styles.
 
 ---
 

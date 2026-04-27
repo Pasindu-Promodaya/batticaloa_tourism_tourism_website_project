@@ -2,6 +2,9 @@ html,
 body {
   height: 100%;
 }
+* {
+  box-sizing: border-box;
+}
 body {
   min-height: 100vh;
   display: flex;
@@ -431,6 +434,7 @@ nav ul {
   padding: 0;
   margin: 10px 0 0 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
 }
@@ -531,6 +535,11 @@ footer {
   animation: popIn 0.25s cubic-bezier(0.4, 2, 0.6, 1) 1;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .popup-image img {
   width: 100%;
   height: 280px;
@@ -597,8 +606,42 @@ footer {
 }
 
 @media (max-width: 700px) {
+  header {
+    padding: 16px 10px;
+  }
+  nav ul {
+    gap: 10px;
+  }
+  nav ul li a {
+    font-size: 0.95em;
+    padding: 6px 10px;
+  }
   main {
     padding: 20px 2vw;
+  }
+  .styled-hero-text {
+    padding: 0 12px;
+  }
+  .styled-hero-text h2 {
+    font-size: 1.35em;
+    margin-bottom: 10px;
+  }
+  .styled-hero-text p {
+    font-size: 0.95em;
+    line-height: 1.4;
+  }
+  .batti-overview {
+    padding: 22px 14px 18px 14px;
+  }
+  .batti-overview h2,
+  .why-visit h2,
+  .featured-attractions h2 {
+    font-size: 1.45em;
+  }
+  .highlight,
+  .attraction-card {
+    width: 100%;
+    max-width: 340px;
   }
   .attraction {
     flex-direction: column;
@@ -613,5 +656,185 @@ footer {
     height: auto;
     min-width: 0;
     min-height: 0;
+  }
+  .modal-content {
+    min-width: 0;
+    width: calc(100vw - 20px);
+    padding: 20px 14px 16px 14px;
+  }
+  .modal-close {
+    width: 36px;
+    height: 36px;
+    font-size: 1.5em;
+    right: 10px;
+    top: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  header h1 {
+    font-size: 1.4em;
+    margin: 0;
+  }
+  nav ul {
+    gap: 8px;
+  }
+  nav ul li a {
+    font-size: 0.9em;
+    padding: 5px 8px;
+  }
+  main {
+    padding: 16px 10px;
+  }
+  .hero {
+    height: 200px;
+  }
+  .styled-hero-text h2 {
+    font-size: 1.2em;
+  }
+  .styled-hero-text p {
+    font-size: 0.88em;
+    line-height: 1.45;
+  }
+  .batti-desc,
+  .about-hero-desc,
+  .highlight p,
+  .attraction-card p,
+  .about-gallery-caption {
+    font-size: 0.95em;
+    line-height: 1.55;
+  }
+  .highlight,
+  .attraction-card,
+  .about-gallery-item {
+    width: 100%;
+    max-width: 100%;
+  }
+  .modal-content {
+    width: calc(100vw - 12px);
+    padding: 16px 10px 12px 10px;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 390px) {
+  header {
+    padding: 14px 10px;
+  }
+  header h1 {
+    font-size: 1.55em;
+  }
+  nav ul {
+    gap: 8px;
+  }
+  nav ul li a {
+    font-size: 0.92em;
+    padding: 6px 9px;
+  }
+  main {
+    padding: 18px 12px;
+  }
+  .hero {
+    height: 215px;
+  }
+  .styled-hero-text h2 {
+    font-size: 1.28em;
+  }
+  .styled-hero-text p {
+    font-size: 0.92em;
+    line-height: 1.45;
+  }
+  .batti-overview {
+    padding: 20px 14px 16px 14px;
+  }
+  .batti-desc,
+  .about-hero-desc,
+  .highlight p,
+  .attraction-card p,
+  .about-gallery-caption {
+    font-size: 0.98em;
+    line-height: 1.58;
+  }
+  .highlight,
+  .attraction-card,
+  .about-gallery-item {
+    width: 100%;
+    max-width: 100%;
+  }
+  .modal-content {
+    width: calc(100vw - 16px);
+    padding: 18px 12px 14px 12px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 700px) {
+  main {
+    padding: 20px 4vw;
+  }
+  .hero {
+    height: 240px;
+  }
+  .styled-hero-text h2 {
+    font-size: 1.7em;
+  }
+  .styled-hero-text p {
+    font-size: 1.02em;
+  }
+  .highlights,
+  .attractions-grid,
+  .about-gallery-grid {
+    gap: 14px;
+  }
+  .highlight,
+  .attraction-card,
+  .about-gallery-item {
+    width: calc(50% - 14px);
+    max-width: 320px;
+  }
+  .modal-content {
+    width: min(94vw, 640px);
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1024px) {
+  main {
+    padding: 26px 6vw;
+  }
+  nav ul {
+    gap: 18px;
+  }
+  nav ul li a {
+    font-size: 1em;
+    padding: 6px 12px;
+  }
+  .hero {
+    height: 280px;
+  }
+  .styled-hero-text h2 {
+    font-size: 2em;
+  }
+  .styled-hero-text p {
+    font-size: 1.08em;
+    max-width: 620px;
+  }
+  .about-hero-content h2 {
+    font-size: 1.8em;
+  }
+  .highlights,
+  .attractions-grid,
+  .about-gallery-grid {
+    gap: 20px;
+  }
+  .highlight,
+  .attraction-card {
+    width: calc(50% - 20px);
+    max-width: 360px;
+  }
+  .about-gallery-item {
+    width: calc(50% - 20px);
+    max-width: 360px;
+  }
+  .modal-content {
+    width: min(92vw, 700px);
+    padding: 26px 24px 20px 24px;
   }
 }
