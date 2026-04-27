@@ -13,6 +13,7 @@
 - [Features](#-features)
 - [Tech Stack](#-tech-stack)
 - [Installation Guide](#-installation-guide)
+- [Apache Configuration](#-apache-configuration)
 - [Project Structure](#-project-structure)
 - [Pages Overview](#-pages-overview)
 - [Screenshots](#-screenshots)
@@ -159,12 +160,12 @@ sudo /Applications/XAMPP/xamppfiles/bin/apachectl start
 
 #### 3. **Access the Website**
 
-⚠️ **IMPORTANT**: All PHP files are in the `src/` folder. You MUST include `/src/` in the URL.
+⚠️ **IMPORTANT**: The project uses [.htaccess](.htaccess) so the root URL opens `src/index.php` automatically.
 
 **Home Page** (Start here):
 
 ```
-http://localhost/batticaloa_tourism_tourism_website_project/src/index.php
+http://localhost/batticaloa_tourism_tourism_website_project/
 ```
 
 **Other Pages** (via navigation menu or direct URL):
@@ -174,10 +175,7 @@ http://localhost/batticaloa_tourism_tourism_website_project/src/index.php
 - Activities: `http://localhost/batticaloa_tourism_tourism_website_project/src/activities.php`
 - Food & Culture: `http://localhost/batticaloa_tourism_tourism_website_project/src/food-culture.php`
 
-❌ **These URLs will NOT work** (missing /src/):
-
-- ~~`http://localhost/batticaloa_tourism_tourism_website_project/`~~
-- ~~`http://localhost/batticaloa_tourism_tourism_website_project/index.php`~~
+**Note:** Pages inside `src/` are still accessed directly from the `src/` folder.
 
 #### 4. **Verify Installation Success**
 
@@ -229,6 +227,33 @@ http://localhost/batticaloa_tourism_tourism_website_project/src/index.php
 | **Port 80 already in use**  | (1) Find process using port 80: `netstat -ano \| findstr :80` (2) Stop that process or (3) Change Apache port in `C:\xampp\apache\conf\httpd.conf`       |
 | **PHP not recognized**      | (1) Reinstall XAMPP (2) Test PHP: `C:\xampp\php\php.exe -v` in command line (3) Verify PHP is in PATH variable                                           |
 | **Navigation links broken** | (1) Verify all 6 PHP files exist in `src/` folder (2) Check for typos in links in `src/nav.php` (3) Ensure each .php file exists                         |
+
+---
+
+## 🔧 Apache Configuration
+
+The project includes a root-level [.htaccess](.htaccess) file to make local setup easier for future users.
+
+### What it does
+
+- Sets `src/index.php` as the default page when visiting the project root
+- Disables directory browsing for the project folder
+- Enables basic compression for HTML, CSS, JavaScript, and SVG assets
+- Adds browser caching rules for images and stylesheets
+- Sends a few basic security headers
+- Blocks access to sensitive files such as `.env`, `.git`, and documentation files
+
+### Compatibility notes
+
+- The current file is safe for Apache 2.4 and XAMPP-style local development
+- It avoids `php_flag` and `php_value` directives that can break on some setups
+- It is meant for convenience and light server hardening, not full production security
+
+### Important behavior
+
+- Because of `DirectoryIndex src/index.php`, users can open the site at the project root URL
+- Page files inside `src/` still use `src/` in their URLs
+- Image and CSS paths inside those PHP files must still be relative to the file location
 
 **Debug Checklist**
 
