@@ -1,9 +1,12 @@
 # Batticaloa Tourism Website - Apache Configuration
 
+# Set index file for directory access
+DirectoryIndex src/index.php
+
 # Enable mod_rewrite
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  RewriteBase /batticaloa_tourism_tourism_website_project/
+  RewriteBase /tourism_website/
 </IfModule>
 
 # Disable directory listing

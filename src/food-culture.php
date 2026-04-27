@@ -55,7 +55,7 @@
             </div>
           </div>
           <div class="about-gallery-item">
-            <img src="images/culture-image-2.jpg" alt="Cultural Traditions" />
+            <img src="../images/culture-image-2.jpg" alt="Cultural Traditions" />
             <div class="about-gallery-caption">
               <strong>Cultural Traditions &amp; Festivals</strong><br />
               Experience vibrant festivals, temple celebrations, and the
@@ -63,7 +63,7 @@
             </div>
           </div>
           <div class="about-gallery-item">
-            <img src="images/culture-image-1.jpeg" alt="Music and Dance" />
+            <img src="../images/culture-image-1.jpeg" alt="Music and Dance" />
             <div class="about-gallery-caption">
               <strong>Music, Dance &amp; Heritage</strong><br />
               Enjoy traditional music, folk dances, and colorful performances

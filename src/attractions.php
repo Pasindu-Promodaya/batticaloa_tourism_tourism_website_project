@@ -59,31 +59,31 @@
 // Data for pop-up modal
 const attractionsData = [
   {
-    img: 'images/fort.jpeg',
+    img: '../images/fort.jpeg',
     title: 'Batticaloa Dutch Fort',
     description: 'Batticaloa Dutch Fort is a historic fort in the town of Batticaloa in Sri Lanka. It was built by the Portuguese in 1628 and was captured by the Dutch in 1638.<br><br><b>Highlights:</b><ul><li>Colonial architecture</li><li>Historic walls</li><li>Lagoon views</li></ul>',
-    mapImg: 'images/fort-location.jpeg',
+    mapImg: '../images/fort-location.jpeg',
     mapUrl: 'https://maps.app.goo.gl/Ymgx5CaSSg9AnxH58?g_st=aw'
   },
   {
-    img: 'images/lagoon.jpeg',
+    img: '../images/lagoon.jpeg',
     title: 'Batticaloa Lagoon Park',
     description: 'Batticaloa Lagoon Park is a picturesque area renowned for its stunning vistas and rich biodiversity.<br><br><b>Highlights:</b><ul><li>Scenic sunset views</li><li>Bird watching</li><li>Boat rides</li></ul>',
-    mapImg: 'images/lagoon-location.jpeg',
+    mapImg: '../images/lagoon-location.jpeg',
     mapUrl: 'https://maps.app.goo.gl/rVNyvnK8bVsncQL77?g_st=aw'
   },
   {
-    img: 'images/beach.jpeg',
+    img: '../images/beach.jpeg',
     title: 'Kallady Beach',
     description: 'Kallady Beach in Batticaloa, Sri Lanka, is a serene, long sandy coastline popular for its breathtaking sunrises, palm-lined shores, and the unique, melodic "singing fish" phenomenon audible near the bridge between April and September.<br><br><b>Highlights:</b><ul><li>Golden sandy beach</li><li>Sunrise views</li><li>Melodic singing fish</li></ul>',
-    mapImg: 'images/beach-location.jpeg',
+    mapImg: '../images/beach-location.jpeg',
     mapUrl: 'https://maps.app.goo.gl/KiofkUsnDPmLeHBQ7?g_st=aw'
   },
   {
-    img: 'images/temple.jpeg',
+    img: '../images/temple.jpeg',
     title: 'Kallady Temple',
     description: 'A Hindu temple, or mandir, is a symbolic cosmic house of God, representing the intersection of humanity and divinity.<br><br><b>Highlights:</b><ul><li>Colorful architecture</li><li>Spiritual ambiance</li><li>Festivals</li></ul>',
-    mapImg: 'images/temple-location.jpeg',
+    mapImg: '../images/temple-location.jpeg',
     mapUrl: 'https://maps.app.goo.gl/AcAhuwNNbtgYzV3H6?g_st=aw'
   }
 ];

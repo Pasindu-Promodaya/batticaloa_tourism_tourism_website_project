@@ -181,7 +181,7 @@
         <h2>Featured Attractions</h2>
         <div class="attractions-grid">
           <div class="attraction-card">
-            <img src="images/fort.jpeg" alt="Batticaloa Dutch Fort" />
+            <img src="../images/fort.jpeg" alt="Batticaloa Dutch Fort" />
             <h3>Batticaloa Dutch Fort</h3>
             <p>
               A historic fort built in 1628, offering panoramic views and a
@@ -189,7 +189,7 @@
             </p>
           </div>
           <div class="attraction-card">
-            <img src="images/lagoon.jpeg" alt="Batticaloa Lagoon Park" />
+            <img src="../images/lagoon.jpeg" alt="Batticaloa Lagoon Park" />
             <h3>Batticaloa Lagoon Park</h3>
             <p>
               A picturesque area renowned for its stunning vistas, birdlife, and
@@ -197,7 +197,7 @@
             </p>
           </div>
           <div class="attraction-card">
-            <img src="images/beach.jpeg" alt="Kallady Beach" />
+            <img src="../images/beach.jpeg" alt="Kallady Beach" />
             <h3>Kallady Beach</h3>
             <p>
               Famous for its golden sands, palm-lined shores, and the unique
@@ -205,7 +205,7 @@
             </p>
           </div>
           <div class="attraction-card">
-            <img src="images/temple.jpeg" alt="Kallady Temple" />
+            <img src="../images/temple.jpeg" alt="Kallady Temple" />
             <h3>Kallady Temple</h3>
             <p>
               A vibrant Hindu temple, central to local culture and spiritual
